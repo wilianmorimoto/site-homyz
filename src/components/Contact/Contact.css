@@ -1,0 +1,99 @@
+.c-container {
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.c-container>div {
+  flex: 1;
+}
+
+.c-right {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.c-right .image-container {
+  border: 8px solid rgb(232, 232, 232);
+}
+
+.c-left {
+  gap: .5rem;
+}
+
+.contactModes {
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+.contactModes .row {
+  gap: 1.5rem;
+}
+
+.mode {
+  width: 16rem;
+  padding: 1rem;
+  border: .8px solid rgba(128, 128, 128, .143);
+  border-radius: 5px;
+  gap: 1rem;
+  transition: .3s ease-in;
+}
+
+.mode .btn {
+  width: 100%;
+  background: var(--lightBlue);
+  color: var(--blue);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.mode >:nth-child(1) {
+  width: 100%;
+  gap: 1.6rem;
+}
+
+.mode .detail .primaryText {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.mode:hover {
+  scale: 1.1;
+  box-shadow: var(--shadow);
+}
+
+.mode .btn:hover {
+  background: var(--blue-gradient);
+  color: #fff;
+  scale: .8;
+}
+
+@media (max-width:1130px) {
+  .c-container {
+    flex-direction: column;
+  }
+
+  .c-left {
+    align-items: center;
+  }
+
+  .c-left .secondaryText {
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .c-right {
+    justify-content: center;
+  }
+
+  .contactModes {
+    width: 100%;
+  }
+
+  .row {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+}
